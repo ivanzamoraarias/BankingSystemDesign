@@ -49,7 +49,7 @@ This document outlines the architecture of a modern internet banking system, des
   - Biometric processing (Rekognition)
   - Real-time notifications (FCM)
 
-### 2. Authentication Service
+### 2. Authentication Service (EL diagrama del Readme no esta correcto , es mi primera vez usando mermaid en Readme)
 ```mermaid
 sequenceDiagram
     Frontend->>Cognito: Submit credentials
