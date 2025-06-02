@@ -93,20 +93,20 @@ Data: DynamoDB, Redis, Aurora PostgreSQL
 
 DevOps: CloudFront (SPA), S3 (assets), CI/CD Pipeline
 
-Key Design Decisions
-Microservices over Monolith:
+## Key Design Decisions
+### Microservices over Monolith:
 
 Isolated scaling for auth, transactions, notifications
 
-Multi-channel Notifications:
+### Multi-channel Notifications:
 
 SNS (SMS/email) + FCM (push) for redundancy
 
-Hybrid Caching:
+### Hybrid Caching:
 
 Redis (hot data) + DynamoDB (authoritative source)
 
-Real-time vs Batch Audit:
+### Real-time vs Batch Audit:
 
 CDC for fraud detection + ETL for regulatory reports
 
@@ -115,7 +115,7 @@ CDC for fraud detection + ETL for regulatory reports
 
 
 ## Deployment
-AWS Infrastructure
+### AWS Infrastructure
 
 .
 ├── frontend/            # CloudFront + S3
