@@ -110,5 +110,28 @@ Real-time vs Batch Audit:
 
 CDC for fraud detection + ETL for regulatory reports
 
-Deployment
+
+
+
+
+## Deployment
 AWS Infrastructure
+
+.
+├── frontend/            # CloudFront + S3
+├── auth/                # Cognito User Pools
+├── bff/                 # Lambda + API Gateway
+├── notifications/       # SQS + Lambda + SNS
+└── audit/               # DynamoDB Streams/Glue
+
+
+
+
+## CI/CD Pipeline
+Frontend: Automated deploys via AWS Amplify or Cloud Front with Edge Locations
+
+Backend: SAM/CloudFormation templates
+
+Infrastructure-as-Code: Terraform modules
+
+
